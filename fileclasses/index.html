@@ -1,0 +1,779 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
+    
+    
+      
+        <title>FileClasses - Metadata Menu</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fileclass" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Metadata Menu" class="md-header__button md-logo" aria-label="Metadata Menu" data-md-component="logo">
+      
+  <img src="../assets/obsidian.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Metadata Menu
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FileClasses
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdelobelle/metadatamenu" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Metadata Menu" class="md-nav__button md-logo" aria-label="Metadata Menu" data-md-component="logo">
+      
+  <img src="../assets/obsidian.png" alt="logo">
+
+    </a>
+    Metadata Menu
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdelobelle/metadatamenu" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general/" class="md-nav__link">
+        General Concepts
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controls/" class="md-nav__link">
+        Controls
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FileClasses
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FileClasses
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#define-a-class-for-a-file-and-authorized-fields-for-this-class" class="md-nav__link">
+    Define a class for a file and authorized fields for this class
+  </a>
+  
+    <nav class="md-nav" aria-label="Define a class for a file and authorized fields for this class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-fileclasses" class="md-nav__link">
+    Nested fileClasses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-settings-syntax" class="md-nav__link">
+    field settings syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="field settings syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fileclass-settings-forms" class="md-nav__link">
+    fileClass settings forms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fileclass-inheritance" class="md-nav__link">
+    fileClass inheritance
+  </a>
+  
+    <nav class="md-nav" aria-label="fileClass inheritance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extends-field" class="md-nav__link">
+    extends field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excludes-field" class="md-nav__link">
+    excludes field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapwithtag-field-supercharged-tag" class="md-nav__link">
+    mapWithTag field : Supercharged Tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iconfield" class="md-nav__link">
+    iconfield
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#define-a-class-for-a-file-and-authorized-fields-for-this-class" class="md-nav__link">
+    Define a class for a file and authorized fields for this class
+  </a>
+  
+    <nav class="md-nav" aria-label="Define a class for a file and authorized fields for this class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-fileclasses" class="md-nav__link">
+    Nested fileClasses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-settings-syntax" class="md-nav__link">
+    field settings syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="field settings syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fileclass-settings-forms" class="md-nav__link">
+    fileClass settings forms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fileclass-inheritance" class="md-nav__link">
+    fileClass inheritance
+  </a>
+  
+    <nav class="md-nav" aria-label="fileClass inheritance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extends-field" class="md-nav__link">
+    extends field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excludes-field" class="md-nav__link">
+    excludes field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapwithtag-field-supercharged-tag" class="md-nav__link">
+    mapWithTag field : Supercharged Tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iconfield" class="md-nav__link">
+    iconfield
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/mdelobelle/metadatamenu/edit/master/docs/fileclasses.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="fileclass">FileClass</h1>
+<p>Manage preset values based on the context of a file (fileClass)</p>
+<div class="admonition info">
+<p class="admonition-title">Dependency</p>
+<p>Dataview plugin required</p>
+</div>
+<h2 id="define-a-class-for-a-file-and-authorized-fields-for-this-class">Define a class for a file and authorized fields for this class</h2>
+<p>a class file is basically a simple note</p>
+<p>the name of the file will be the name of the class</p>
+<p>the lines of the file will be the fields managed for this class</p>
+<ol>
+<li>Define the folder where you want to store your class files (see settings above)</li>
+<li>Create a note in this folder, let's say <code>music.md</code>, containing lines with the name of fields, their type and options (see <a href="#field-settings-syntax">settings</a>) that you want to manage for this class
+<div class="highlight"><pre><span></span><code><span class="gh">music.md</span>
+<span class="gh">=========</span>
+genre:: {&quot;type&quot;: &quot;Input&quot;, &quot;options&quot;: {&quot;0&quot;: &quot;rock&quot;, &quot;1&quot;: &quot;pop&quot;}}
+difficulty::{&quot;type&quot;: &quot;Number&quot; ....
+...
+</code></pre></div></li>
+<li>In a regular note, let's say <code>Black Dog.md</code>, insert a frontmatter field named <code>fileClass</code></li>
+<li>The value of <code>fileClass</code> has to be the name of the file Class where you have the fields that you want to manage for this note. e.g in our case
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">fileClass</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">music</span><span class="w"></span>
+<span class="nn">---</span><span class="w"></span>
+</code></pre></div></li>
+<li>when right-clicking on a link to <code>Black Dog.md</code>, the fields in the context menu will be filter to show only the ones that are also included in <code>music.md</code>.</li>
+</ol>
+<h3 id="nested-fileclasses">Nested fileClasses</h3>
+<p>You can sort your fileClasses in sub-folders. Then if you want to use them in a note, just type their sub-path <code>fileClass: &lt;sub-folder&gt;/&lt;sub-sub-folder&gt;/&lt;fileClass name&gt;</code></p>
+<h2 id="field-settings-syntax">field settings syntax</h2>
+<p>You can specify the type of a field in a fileClass, and its options. Type and Options are called "field settings"</p>
+<p>Type can be one of the types defined above (see ## Field Types)</p>
+<p>Options can be an array of options, or an object <key, value></p>
+<blockquote>
+<p>NB 1: Arrays will be converted in Objects <key, value> after the first modification of the field through <code>Manage &lt;fileClass&gt; Fields</code> action in context menu (see below)</p>
+<p>NB 2: "input" type attributes dont need a setting, leaving the name of the attribute only will categorize this attribute automatically as an "input" type.</p>
+</blockquote>
+<p>A field settings is written in JSON (using double-quote only <code>"</code> )and must be written as a value of and "inline (dataview) field"</p>
+<h3 id="example">example</h3>
+<p>Say you want to set fields in <code>music.md</code> fileClass :</p>
+<ul>
+<li><code>genre</code> is a <code>Multi</code> field with "rock", "pop" and "jazz" as options,</li>
+<li><code>difficulty</code> is a <code>Number</code> within [0, 100] that you want to decrement/increment by 5</li>
+<li><code>masterization</code>is a <code>Cycle</code> field with [⭐️, ⭐️⭐️, ⭐️⭐️⭐️, ⭐️⭐️⭐️⭐️, ⭐️⭐️⭐️⭐️⭐️] values</li>
+<li><code>tone</code> is a <code>Select</code> field with [A, B, C, D, E, F, G] values</li>
+<li><code>artist</code> is an <code>Input</code> field</li>
+<li><code>tab available</code> is a <code>Boolean</code> field</li>
+</ul>
+<p>here is how the fileClass <code>music</code> file should be written</p>
+<div class="highlight"><pre><span></span><code><span class="gh">music.md</span>
+<span class="gh">=========</span>
+genre:: {&quot;type&quot;:&quot;Multi&quot;, &quot;options&quot;:[&quot;rock&quot;, &quot;pop&quot;, &quot;jazz&quot;]}
+difficulty:: {&quot;type&quot;: &quot;Number&quot;, &quot;options&quot;: {&quot;step&quot;: &quot;5&quot;, &quot;min&quot;: &quot;0&quot;, &quot;max&quot;: &quot;100&quot;}}
+masterization:: {&quot;type&quot;:&quot;Cycle&quot;, &quot;options&quot;:[&quot;⭐️&quot;, &quot;⭐️⭐️&quot;, &quot;⭐️⭐️⭐️&quot;, &quot;⭐️⭐️⭐️⭐️&quot;, &quot;⭐️⭐️⭐️⭐️⭐️&quot;]}
+tone:: {&quot;type&quot;:&quot;Select&quot;, &quot;options&quot;:[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;]}
+artist
+tab available:: {&quot;type&quot;: &quot;Boolean&quot;}
+</code></pre></div>
+<p>this <code>music</code> fileClass could also be written</p>
+<div class="highlight"><pre><span></span><code><span class="gh">music.md</span>
+<span class="gh">=========</span>
+genre:: {&quot;type&quot;:&quot;Multi&quot;, &quot;options&quot;:{&quot;0&quot;:&quot;rock&quot;, &quot;1&quot;:&quot;pop&quot;, &quot;2&quot;: &quot;jazz&quot;}
+difficulty:: {&quot;type&quot;: &quot;Number&quot;, &quot;options&quot;: {&quot;step&quot;: &quot;5&quot;, &quot;min&quot;: &quot;0&quot;, &quot;max&quot;: &quot;100&quot;}}
+masterization:: {&quot;type&quot;:&quot;Cycle&quot;, &quot;options&quot;:{&quot;0&quot;: &quot;⭐️&quot;, &quot;1&quot;: &quot;⭐️⭐️&quot;, &quot;2&quot;: &quot;⭐️⭐️⭐️&quot;, &quot;3&quot;: &quot;⭐️⭐️⭐️⭐️&quot;, &quot;4&quot;: &quot;⭐️⭐️⭐️⭐️⭐️&quot;}}
+tone:: {&quot;type&quot;:&quot;Select&quot;, &quot;options&quot;:{&quot;0&quot;: &quot;A&quot;, &quot;1&quot;: &quot;B&quot;, &quot;2&quot;: &quot;C&quot;, &quot;3&quot;: &quot;D&quot;, &quot;4&quot;: &quot;E&quot;, &quot;5&quot;: &quot;F&quot;, &quot;6&quot;: &quot;G&quot;}}
+artist:: {&quot;type&quot;: &quot;Input&quot;}
+tab available:: {&quot;type&quot;: &quot;Boolean&quot;}
+</code></pre></div>
+<h2 id="fileclass-settings-forms">fileClass settings forms</h2>
+<p>Because it can be overwhelming to remember this syntax, you can manage "type" and "options" for each fields from:
+- the context menu of a note that has this fileClass as a frontmatter's fileClass attribute : click on [<code>⚙️ Manage &lt;music&gt; fields</code>] for <code>music.md</code> from any file with <code>fileClass: music</code> set in frontmatter
+- the more-options menu of a fileClass file
+- a command within a fileClass file (<code>alt+P</code>) -&gt; <code>Metadata Menu: fileClass attributes options</code></p>
+<p>You will be asked to choose the field that you want to modify or if you want to add a new one. After having selected a field, you will acces to a form to modify the type and options of the field (same form as in the plugin's <a href="../settings/#preset-field-settings">settings</a>)</p>
+<h2 id="fileclass-inheritance">fileClass inheritance</h2>
+<h3 id="extends-field"><code>extends</code> field</h3>
+<p>a fileClass can extend another fileClass to benefit of it's fields without having to rewrite them.</p>
+<p>It may be usefull if you have several fileClass with the same set of fields.</p>
+<p>For example you may have a fileClass named <code>course.md</code> with some fields like <code>teacher</code>, <code>lecture</code>, <code>grade</code>, <code>type</code>.</p>
+<p>And you may want to define more specific fields depending on the type of course: a first fileClass <code>mathematics.md</code> with a field <code>chapter:: {"type": "Select", "options": {"0": "Algebra", "1": "Geometry", "2": "Statistics"}}</code> and a second fileClass <code>physics.md</code> with a field <code>lecture:: {"type": "Select", "options": {"0": "Mecanics", "1": "Optics", "2": "Electricity"}}</code>. For the two of them, you want to benefit from the <code>course</code> fileClass's fields.</p>
+<p>You can do this very easily by using the <code>extends</code> field in their frontmatter.</p>
+<p>With our example:</p>
+<p><code>course.md</code></p>
+<div class="highlight"><pre><span></span><code>teacher::{&quot;type&quot;: &quot;Input&quot;}
+grade::{&quot;type&quot;: &quot;Select&quot;, &quot;options&quot;:{&quot;0&quot;: &quot;A&quot;, &quot;1&quot;: &quot;B&quot;, &quot;2&quot;: &quot;C&quot;}}
+type::{&quot;type&quot;: &quot;Select&quot;, &quot;options&quot;:{&quot;0&quot;: &quot;at school&quot;, &quot;1&quot;: &quot;online&quot;, &quot;2&quot;: &quot;personal teacher at home&quot;}}
+</code></pre></div>
+<p><code>mathematics.md</code></p>
+<div class="highlight"><pre><span></span><code>---
+extends: course
+---
+chapter::{&quot;type&quot;: &quot;Select&quot;, &quot;options&quot;: {&quot;0&quot;: &quot;Algebra&quot;, &quot;1&quot;: &quot;Geometry&quot;, &quot;2&quot;: &quot;Statistics&quot;}}
+to do next::{&quot;type&quot;: &quot;File&quot;, &quot;options&quot;: {&quot;dvQueryString&quot;: &quot;dv.pages(&#39;\&quot;Courses\&quot;&#39;)&quot;}}
+</code></pre></div>
+<p><code>physics.md</code></p>
+<div class="highlight"><pre><span></span><code>---
+extends: course
+---
+lecture:: {&quot;type&quot;: &quot;Select&quot;, &quot;options&quot;: {&quot;0&quot;: &quot;Mecanics&quot;, &quot;1&quot;: &quot;Optics&quot;, &quot;2&quot;: &quot;Electricity&quot;}}
+</code></pre></div>
+<p>All notes with fileClass <code>mathematics</code> or <code>physics</code> will benefit from the fields of <code>course</code> with the same option, but they will have their own fields in addition to it (<code>chapter</code> for <code>mathematics</code>, <code>lecture</code> for <code>physics</code>)</p>
+<p>A fileClass can also override a field it has inherited from by defining it again.</p>
+<p>for example:</p>
+<p><code>physics.md</code></p>
+<div class="highlight"><pre><span></span><code>---
+extends: course
+---
+lecture:: {&quot;type&quot;: &quot;Select&quot;, &quot;options&quot;: {&quot;0&quot;: &quot;Mecanics&quot;, &quot;1&quot;: &quot;Optics&quot;, &quot;2&quot;: &quot;Electricity&quot;}}
+type::{&quot;type&quot;: &quot;Select&quot;, &quot;options&quot;:{&quot;0&quot;: &quot;at school&quot;, &quot;1&quot;: &quot;online&quot;}}
+</code></pre></div>
+<p>the <code>type</code> field in <code>physics</code> will override the one in <code>course</code>. notes with <code>fileClass: physics</code> will have <code>at school</code> and <code>online</code> options for <code>type</code> but not <code>personal teacher at home</code></p>
+<h3 id="excludes-field"><code>excludes</code> field</h3>
+<p>when defined with an array of values, the field in the array won't be inherited from the parent fileClass</p>
+<p>With our previous example:</p>
+<p><code>physics.md</code></p>
+<div class="highlight"><pre><span></span><code>---
+extends: course
+excludes: [grade]
+---
+lecture:: {&quot;type&quot;: &quot;Select&quot;, &quot;options&quot;: {&quot;0&quot;: &quot;Mecanics&quot;, &quot;1&quot;: &quot;Optics&quot;, &quot;2&quot;: &quot;Electricity&quot;}}
+</code></pre></div>
+<p>notes with <code>fileClass: physics</code> will inherit <code>teacher</code> and <code>type</code> from <code>course</code> fileClass but not <code>grade</code></p>
+<h3 id="mapwithtag-field-supercharged-tag"><code>mapWithTag</code> field : Supercharged Tag</h3>
+<p>when this is set to <code>true</code> all notes including a tag with the same name will benefit from the fields' definitions of this fileclass</p>
+<p>you can also map a fileclass with his tag from the context menu of the fileclass</p>
+<p>This works with nested tags as well</p>
+<h3 id="iconfield"><code>icon</code>field</h3>
+<p>you can customize the icon of the metadata button that gives access to a modal containing all available fields for a note bound with this fileclass</p>
+<p>the icon names are available from https://lucide.dev</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../controls/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Controls" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Controls
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../api/" class="md-footer__link md-footer__link--next" aria-label="Next: API" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              API
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      
+    
+  </body>
+</html>
